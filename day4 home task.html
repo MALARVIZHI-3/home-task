@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
-let numbers = [1, 2, 3, 2, 4, 3, 5];
 
-let uniqueNumbers = numbers.filter((value, index, array) => {
-  return array.indexOf(value) === index;
-});
+let sentence = "Hello world";
+let result = sentence
+  .split(" ")
+  .map(w => w.split("").reverse().join(""))
+  .join(" ");
+console.log(result);
 
-console.log(uniqueNumbers); 
 </script>
 </body>
 </html>
