@@ -7,13 +7,17 @@
 </head>
 <body>
     <script>
-let numbers = [1, 2, 3, 2, 4, 3, 5];
 
-let uniqueNumbers = numbers.filter((value, index, array) => {
-  return array.indexOf(value) === index;
-});
+let str = "Hello World";
+let count = 0;
+let vowels = "aeiouAEIOU";
+for (let char of str) {
+  if (vowels.includes(char)) {
+    count++;
+  }
+}
+console.log("Number of vowels:", count); 
 
-console.log(uniqueNumbers); 
 
 
 
